@@ -1,6 +1,6 @@
 # 移动端快速开发指南
 
-> [传送门](http://junmer.github.io/mobile-dev-get-started)
+> [markdown](index.md) , [reveal](http://junmer.github.io/mobile-dev-get-started)
 
 ## run
 
