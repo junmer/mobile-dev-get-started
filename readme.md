@@ -17,4 +17,16 @@ $ cp -r node_modules/reveal.js/{js,css,lib,plugin} .
 $ wget http://localhost:1948/index.md -O index.html
 ```
 
-修改 `index.html` 中的 `/css/theme/${theme}.css`
+替换路径
+
+```
+$ cat index.html | sed \
+    -e "s#'/lib/#'lib/#g" \
+    -e "s#\"/lib/#\"lib/#g" \
+    -e "s#\"/js/#\"js/#g" \
+    -e "s#\"/css/#\"css/#g" \
+    -e "s#'/plugin/#'plugin/#g" \
+    -e "s#default.css#black.css#g" \
+    > _index.html && mv _index.html index.html
+
+```

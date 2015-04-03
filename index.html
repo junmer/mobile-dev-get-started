@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Reveal.js</title>
-        <link rel="stylesheet" href="/css/reveal.css">
-        <link rel="stylesheet" href="/css/theme/black.css" id="theme">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/black.css" id="theme">
         <!-- For syntax highlighting -->
-        <link rel="stylesheet" href="/lib/css/zenburn.css">
+        <link rel="stylesheet" href="lib/css/zenburn.css">
         <!-- If the query includes 'print-pdf', use the PDF print sheet -->
         <script>
-          document.write( '<link rel="stylesheet" href="/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+          document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
         </script>
     </head>
     <body>
@@ -535,8 +535,8 @@ edpm start
 # thx
 </script></section></div>
         </div>
-        <script src="/lib/js/head.min.js"></script>
-        <script src="/js/reveal.js"></script>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
         <script>
             Reveal.initialize({
                 controls: true,
@@ -547,11 +547,11 @@ edpm start
                 transition: Reveal.getQueryHash().transition || 'default',
                 // Optional libraries used to extend on reveal.js
                 dependencies: [
-                    { src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-                    { src: '/plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
-                    { src: '/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
-                    { src: '/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                    { src: '/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
                 ]
             });
         </script>
